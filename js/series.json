@@ -1,0 +1,62 @@
+[{  
+    "id": "SG",
+    "imagen": "SG.jpg",
+    "nombre":"Steins;Gate 0",
+    "trailer": "https://www.youtube.com/embed/DIfK--ahWAs"
+},
+{   "id"    : "BnHA",
+    "imagen": "BnHA.jpg",
+    "nombre":"Boku no Hero Academia",
+    "trailer": "https://www.youtube.com/embed/nyeNg6VjDqU"
+},
+{   "id"    : "MB",
+    "imagen": "MB.jpg",
+    "nombre":"Megalo Box",
+    "trailer": "https://www.youtube.com/embed/-j8sX95vkfc"
+},
+{   "id"    : "EMS",
+    "imagen": "EMS.jpg",
+    "nombre":"Eromanga Sensei",
+    "trailer": "https://www.youtube.com/embed/TzBk9alIqPI"
+},
+{   "id"    : "GTA2",
+    "imagen": "GTA2.jpg",
+    "nombre":"Gakusen Toshi Asterisk 2",
+    "trailer": "https://www.youtube.com/embed/28pD4wkg5vM"
+},
+{   "id"    : "G2",
+    "imagen": "G2.jpg",
+    "nombre":"Genshiken 2",
+    "trailer": "https://www.youtube.com/embed/iD6ufvvwi-A"
+},
+{   "id"     : "RZ",
+    "imagen": "RZ.jpg",
+    "nombre":"Re:Zero Kara Hajimeru Isekai Seikatsu",
+    "trailer": "https://www.youtube.com/embed/vFfXjuVA1Jk"
+},
+{   "id"    : "SdS",
+    "imagen": "SdS.jpg",
+    "nombre":"Sakamoto desu ga?",
+    "trailer": "https://www.youtube.com/embed/Xc2JV9n741U"
+},
+{   "id"    : "JG",
+    "imagen": "JG.png",
+    "nombre":"Joker Game",
+    "trailer": "https://www.youtube.com/embed/0G7YW3XcUaA"    
+},
+{   "id"    : "SAO",
+    "imagen": "SAO.jpg",
+    "nombre":"Sword Art Online Alternative: GGO",
+    "trailer": "https://www.youtube.com/embed/vRqY8I7G8Nw"    
+},
+{   "id"    : "RYB",
+    "imagen": "RYB.jpg",
+    "nombre":"Rokuhoudou Yotsuiro Biyori",
+    "trailer": "https://www.youtube.com/embed/gYPlQqgZRhs"    
+},
+{   "id"    : "P5",
+    "imagen": "P5.jpg",
+    "nombre":"Persona 5 The Animation",
+    "trailer": "https://www.youtube.com/embed/2WO9ciTYjGg"    
+}
+]

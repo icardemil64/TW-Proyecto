@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>MoviesChart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/func.js"></script>
+</head>
+<body>
+    <!--Barra de navegación de la página-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">MC</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#topPeliculas">TOP</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Primer contenedor, donde estarán las películas mejor rankeadas-->
+    <div class="container text-center">
+        <h3>MOVIESCHART</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut massa mauris, scelerisque ut ornare in, finibus nec tortor. Integer in imperdiet odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent in magna viverra, accumsan nulla euismod, tincidunt libero. Fusce lobortis, lacus et euismod malesuada, augue arcu semper nisl, eu dictum felis augue non felis. Praesent suscipit, libero molestie sollicitudin dapibus, justo ex faucibus nulla, in ornare lacus. </p>
+        <div id="topPeliculas" class="row">
+            <div class="col-sm-4">
+                <div class="card cartel" style="width: 400px">
+                    <img class="card-img-top img-cartel" src="img/G2.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Genshiken 2</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card cartel" style="width: 400px">
+                    <img class="card-img-top img-cartel" src="img/JG.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Joker Game</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card cartel" style="width: 400px">
+                    <img class="card-img-top img-cartel" src="img/MB.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Magelobox</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Sección donde están el resto de estrenos-->    
+    <div class="bg-1">
+        <div id="contenedorSeries" class="container text-center">
+        </div>
+    </div>
+    <!--Ventana con los detalles de la película-->
+    <div class="modal fade" id="infoPelicula" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <!--Cabecera de ventana emergente-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 id="tituloPelicula"></h4>
+                </div>
+                <!--Cuerpo de ventana emergente-->
+                <div class="modal-body">
+                    <div class="row detalles-contenido">
+                        <div class="col-sm-4">
+                            <img id="imagenModal" src="img/MB.jpg" alt="MG">
+                        </div>
+                        <div class="col-sm-4">
+                            <h2>Sinopsis</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt diam tortor, nec sollicitudin nunc imperdiet at. Maecenas at libero quis dolor aliquet tempor sit amet a enim. Mauris a faucibus velit, quis ornare arcu. Nam posuere, sapien scelerisque dapibus interdum, nisi ligula ultrices urna, eget laoreet felis elit aliquam. </p>
+                        </div>
+                        <div class="col-sm-4">
+                            <h2>Información</h2>
+                            <ul class="list-group">
+                                <li class="list-group-item">Director:</li>
+                                <li class="list-group-item">Año de estreno:</li>
+                                <li class="list-group-item"><h5>Promedio de la crítica: <span class="label label-default">4.9</span></h5></li>
+                                <li class="list-group-item"><h5>Promedio de los usuarios: <span class="label label-default">3.8</span></h5></li>                            
+                                <li class="list-group-item"> <button id="verTrailer" type="button" class="btn btn-secundary btn-block">Ver trailer</button> </li>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Contenedor del trailer-->
+                    <div id="contenedorTrailer" class="well text-center">
+                            <iframe id="trailer" width="560" height="315" src="https://www.youtube.com/embed/-j8sX95vkfc?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!--Fin del cuerpo de la ventana emergente-->
+            </div>
+        </div>
+        <!--Cierre de ventana emergente-->
+    </div>
+</body>
+</html>
