@@ -62,7 +62,7 @@
             </div>
         </div>
     </div>
-    <!--Sección donde están el resto de estrenos-->    
+    <!--Sección donde están el resto de estrenos-->
     <div class="bg-1">
         <div id="contenedorSeries" class="container text-center">
         </div>
@@ -89,17 +89,48 @@
                         <div class="col-sm-4">
                             <h2>Información</h2>
                             <ul class="list-group">
-                                <li class="list-group-item">Director:</li>
                                 <li class="list-group-item">Año de estreno:</li>
                                 <li class="list-group-item"><h5>Promedio de la crítica: <span class="label label-default">4.9</span></h5></li>
-                                <li class="list-group-item"><h5>Promedio de los usuarios: <span class="label label-default">3.8</span></h5></li>                            
-                                <li class="list-group-item"> <button id="verTrailer" type="button" class="btn btn-secundary btn-block">Ver trailer</button> </li>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+                                <li class="list-group-item"><h5>Promedio de los usuarios: <span class="label label-default">3.8</span></h5></li>
+                                <li class="list-group-item"> <button id="verTrailer" type="button" class="btn btn-secundary btn-block">Ver trailer</button></li>
+                                <li class="list-group-item"> <button id="verInfo" type="button" class="btn btn-secundary btn-block">Ver información</button></li>
                             </ul>
                         </div>
                     </div>
                     <!--Contenedor del trailer-->
                     <div id="contenedorTrailer" class="well text-center">
                             <iframe id="trailer" width="560" height="315" src="https://www.youtube.com/embed/-j8sX95vkfc?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <!--Contenedor de información-->
+                    <div id="contenedorInformacion" class="well">
+                      <table class="table" style="width:70%;margin: 0 auto;">
+                        <tbody>
+                          <tr>
+                            <td><span class="glyphicon glyphicon-user"></span> <strong>Director</strong></td>
+                            <td id="etiquetaDirector"></td>
+                          </tr>
+                          <tr>
+                            <td><span class="glyphicon glyphicon-pencil"></span> <strong>Genero</strong></td>
+                            <td id="etiquetaGenero"></td>
+                          </tr>
+                          <tr>
+                            <td><span class="glyphicon glyphicon-text-color"></span> <strong>Idioma</strong></td>
+                            <td id="etiquetaIdioma"></td>
+                          </tr>
+                          <tr>
+                            <td><span class="glyphicon glyphicon-home"></span> <strong>Estudio</strong></td>
+                            <td id="etiquetaEstudio"></td>
+                          </tr>
+                          <tr>
+                            <td><span class="glyphicon glyphicon-usd"></span> <strong>Presupuesto</strong></td>
+                            <td id="etiquetaPresupuesto"></td>
+                          </tr>
+                          <tr>
+                            <td><span class="glyphicon glyphicon-exclamation-sign"></span> <strong>Calificacion</strong></td>
+                            <td id="etiquetaCalificacion"></td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                 </div>
                 <!--Fin del cuerpo de la ventana emergente-->

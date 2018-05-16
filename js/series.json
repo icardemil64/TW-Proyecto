@@ -1,4 +1,4 @@
-[{  
+[{
     "id": "SG",
     "imagen": "SG.jpg",
     "nombre":"Steins;Gate 0",
@@ -42,21 +42,21 @@
 {   "id"    : "JG",
     "imagen": "JG.png",
     "nombre":"Joker Game",
-    "trailer": "https://www.youtube.com/embed/0G7YW3XcUaA"    
+    "trailer": "https://www.youtube.com/embed/0G7YW3XcUaA"
 },
 {   "id"    : "SAO",
     "imagen": "SAO.jpg",
     "nombre":"Sword Art Online Alternative: GGO",
-    "trailer": "https://www.youtube.com/embed/vRqY8I7G8Nw"    
+    "trailer": "https://www.youtube.com/embed/vRqY8I7G8Nw"
 },
 {   "id"    : "RYB",
     "imagen": "RYB.jpg",
     "nombre":"Rokuhoudou Yotsuiro Biyori",
-    "trailer": "https://www.youtube.com/embed/gYPlQqgZRhs"    
+    "trailer": "https://www.youtube.com/embed/gYPlQqgZRhs"
 },
 {   "id"    : "P5",
     "imagen": "P5.jpg",
     "nombre":"Persona 5 The Animation",
-    "trailer": "https://www.youtube.com/embed/2WO9ciTYjGg"    
+    "trailer": "https://www.youtube.com/embed/2WO9ciTYjGg"
 }
 ]
