@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>MoviesChart</title>
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <script src="js/func.js"></script>
+    </head>
+<body>
+    <!--Barra de navegación de la página-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">MC</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#topPeliculas">TOP</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Contenedor -->
+        <div class="container text-center">
+                <h3>MOVIESCHART</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut massa mauris, scelerisque ut ornare in, finibus nec tortor. Integer in imperdiet odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent in magna viverra, accumsan nulla euismod, tincidunt libero. Fusce lobortis, lacus et euismod malesuada, augue arcu semper nisl, eu dictum felis augue non felis. Praesent suscipit, libero molestie sollicitudin dapibus, justo ex faucibus nulla, in ornare lacus. </p>
+                <div id="topPeliculas" class="row">
+                    <div class="col-sm-4">
+                        <a data-toggle="modal" data-target="#idCrearPelicula">
+                            <div class="card cartel" style="width: 400px">
+                            <i id="#crearPelicula" class="fas fa-film fa-10x estiloFA"></i>
+                            <div class="card-body">
+                                <h4 class="card-title">Crear</h4>
+                            </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a data-toggle="modal" data-target="#idModificarPelicula">
+                            <div class="card cartel" style="width: 400px">
+                            <i id="#modificarPelicula" class="fas fa-edit fa-10x estiloFA"></i>
+                            <div class="card-body">
+                                <h4 class="card-title">Modificar</h4>
+                            </div>
+                            </div>
+                        </a>        
+                    </div>
+                    <div class="col-sm-4">
+                        <a data-toggle="modal" data-target="#idEliminarPelicula">
+                            <div class="card cartel" style="width: 400px">
+                            <i id="#eliminarPelicula" class="fas fa-eraser fa-10x estiloFA"></i>
+                            <div class="card-body">
+                                <h4 class="card-title">Eliminar</h4>
+                            </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    <!--Ventana emergente para eliminar película-->
+    <div class="modal fade" id="idEliminarPelicula" role="dialog">
+            <div class="modal-dialog modal-lg" style="width: 50%">
+                <div class="modal-content">
+                    <!--Cabecera de ventana emergente-->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4>Eliminar película</h4>
+                    </div>
+                    <!--Cuerpo de ventana emergente-->
+                    <div class="modal-body">
+                        <div class="well well-sm">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                  <label class="control-label col-sm-2" for="email">ID película:</label>
+                                  <div class="col-sm-10">
+                                    <input type="email" class="form-control" placeholder="ID">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10 text-right">
+                                        <button type="submit" class="btn btn-danger">Eliminar</button>
+                                    </div>
+                                </div>
+                            </form>                     
+                        </div>
+                    </div>
+                    <!--Fin del cuerpo de la ventana emergente-->
+                </div>
+            </div>
+            <!--Cierre de ventana emergente-->
+    </div>
+    <!--Ventana emergente para modificar película-->
+    <div class="modal fade" id="idModificarPelicula" role="dialog">
+            <div class="modal-dialog modal-lg" style="width: 50%">
+                <div class="modal-content">
+                    <!--Cabecera de ventana emergente-->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4>Modificar película</h4>
+                    </div>
+                    <!--Cuerpo de ventana emergente-->
+                    <div class="modal-body">
+                        <div class="well well-sm">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                  <label class="control-label col-sm-2" for="email">ID película:</label>
+                                  <div class="col-sm-10">
+                                    <input type="email" class="form-control" placeholder="ID">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10 text-right">
+                                        <button type="submit" class="btn btn-info">Modificar</button>
+                                    </div>
+                                </div>
+                            </form>                     
+                        </div>
+                    </div>
+                    <!--Fin del cuerpo de la ventana emergente-->
+                </div>
+            </div>
+            <!--Cierre de ventana emergente-->
+    </div>
+    <!--Ventana emergente para crear película-->
+    <div class="modal fade" id="idCrearPelicula" role="dialog">
+            <div class="modal-dialog modal-lg" style="width: 50%">
+                <div class="modal-content">
+                    <!--Cabecera de ventana emergente-->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4>Crear película</h4>
+                    </div>
+                    <!--Cuerpo de ventana emergente-->
+                    <div class="modal-body">
+                        <div class="well well-sm">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2">ID: </label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" placeholder="Ingresar ID">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                  <label class="control-label col-sm-2">Nombre:</label>
+                                  <div class="col-sm-10">
+                                    <input type="email" class="form-control" placeholder="Ingresar nombre">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                        <label class="control-label col-sm-2">Director:</label>
+                                        <div class="col-sm-10">
+                                          <input type="email" class="form-control" placeholder="Ingresar director">
+                                        </div>
+                                </div>
+                                <div class="form-group">
+                                        <label class="control-label col-sm-2">Género:</label>
+                                        <div class="col-sm-10">
+                                          <input type="email" class="form-control" placeholder="Ingresar género">
+                                        </div>
+                                </div>
+                                <div class="form-group">
+                                        <label class="control-label col-sm-2">Idioma:</label>
+                                        <div class="col-sm-10">
+                                          <input type="email" class="form-control" placeholder="Ingresar idioma">
+                                        </div>
+                                </div>
+                                <div class="form-group">
+                                        <label class="control-label col-sm-2">Estudio:</label>
+                                        <div class="col-sm-10">
+                                          <input type="email" class="form-control" placeholder="Ingresar estudio">
+                                        </div>
+                                </div>
+                                <div class="form-group">
+                                        <label class="control-label col-sm-2">Presupuesto:</label>
+                                        <div class="col-sm-10">
+                                          <input type="email" class="form-control" placeholder="Ingresar presupuesto">
+                                        </div>
+                                </div>
+                                <div class="form-group">
+                                        <label class="control-label col-sm-2">URL imagen:</label>
+                                        <div class="col-sm-10">
+                                          <input type="email" class="form-control" placeholder="Ingresar imagen">
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                        <label class="control-label col-sm-2">URL trailer:</label>
+                                        <div class="col-sm-10">
+                                          <input type="email" class="form-control" placeholder="Ingresar trailer">
+                                        </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10 text-right">
+                                        <button type="submit" class="btn btn-success">Crear</button>
+                                    </div>
+                                </div>
+                            </form>                     
+                        </div>
+                    </div>
+                    <!--Fin del cuerpo de la ventana emergente-->
+                </div>
+            </div>
+            <!--Cierre de ventana emergente-->
+    </div>
+</body>
+</html>
